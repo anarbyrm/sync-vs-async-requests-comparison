@@ -1,7 +1,7 @@
-import requests
 import os
-
 from urllib.parse import urljoin
+
+import requests
 
 mapping = {
     "products": "admin/api/2024-01/products.json",
