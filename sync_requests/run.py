@@ -15,7 +15,6 @@ def publish_products(products: list, client: Client) -> list:
                 data=product
             )
             result.append(response)
-            print(f"{response['product']['title']} published")
 
         except Exception as exc:
             print(exc)
@@ -37,15 +36,5 @@ if __name__ == "__main__":
     print(f"\n{len(result)} products out of {len(product_data)} are migrated")
     print(f"finished in {finished - started} seconds")
 
-    # result in terminal:
-    # Product 1 published
-    # Product 2 published
-    # Product 3 published
-    # Product 4 published
-    # Product 5 published
-    # Product 6 published
-    # Product 7 published
-    # Product 8 published
-
     # 8 products out of 8 are migrated
-    # finished in 6.66955828666687 seconds
+    # finished in 9.888469934463501 seconds
